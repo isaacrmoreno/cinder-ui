@@ -1,5 +1,5 @@
 {
-  "name": "@cinder/web-ui",
+  "name": "@isaacrmoreno/cinder-ui",
   "version": "0.1.0",
   "description": "Reusable website sections for Cinder managed small-business websites.",
   "license": "UNLICENSED",
@@ -21,7 +21,7 @@
     "**/*.css"
   ],
   "publishConfig": {
-    "access": "restricted",
+    "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
@@ -35,5 +35,20 @@
   },
   "devDependencies": {
     "react": "19.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaacrmoreno/cinder-ui.git",
+    "directory": "packages/web-ui"
+  },
+  "homepage": "https://github.com/isaacrmoreno/cinder-ui#readme",
+  "bugs": {
+    "url": "https://github.com/isaacrmoreno/cinder-ui/issues"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "website",
+    "cinder"
+  ]
 }

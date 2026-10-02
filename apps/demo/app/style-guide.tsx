@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import type { ReactNode } from "react";
-import { Header, Hero, themePresets } from "@cinder/web-ui";
-import type { Theme } from "@cinder/web-ui";
+import { Header, Hero, themePresets } from "@isaacrmoreno/cinder-ui";
+import type { Theme } from "@isaacrmoreno/cinder-ui";
 
 const fonts = {
   sans: { label: "Arial", family: "Arial, Helvetica, sans-serif", package: null },
@@ -60,7 +60,7 @@ export function StyleGuide() {
     ...(naturalPhoto ? { "--cinder-image-filter": "none" } : {}),
   };
   const selectedFont = fonts[font];
-  const code = `${selectedFont.package ? `// npm install ${selectedFont.package}\nimport "${selectedFont.package}";\n` : ""}import { Header, Hero } from "@cinder/web-ui";\nimport "@cinder/web-ui/styles.css";\n\nconst brandStyle = ${JSON.stringify(sectionStyle, null, 2)};\n\n<Hero\n  variant="split"\n  theme="${theme}"\n  style={brandStyle}\n  title="${direction.title}"\n  image={${JSON.stringify({ src: selectedPhoto.src, alt: selectedPhoto.alt, position: selectedPhoto.position })}}\n  primaryAction={{ label: "Let’s talk", href: "mailto:hello@example.com" }}\n/>`;
+  const code = `${selectedFont.package ? `// npm install ${selectedFont.package}\nimport "${selectedFont.package}";\n` : ""}import { Header, Hero } from "@isaacrmoreno/cinder-ui";\nimport "@isaacrmoreno/cinder-ui/styles.css";\n\nconst brandStyle = ${JSON.stringify(sectionStyle, null, 2)};\n\n<Hero\n  variant="split"\n  theme="${theme}"\n  style={brandStyle}\n  title="${direction.title}"\n  image={${JSON.stringify({ src: selectedPhoto.src, alt: selectedPhoto.alt, position: selectedPhoto.position })}}\n  primaryAction={{ label: "Let’s talk", href: "mailto:hello@example.com" }}\n/>`;
   return <section id="styles" className="demo-style-guide" aria-labelledby="style-guide-title">
     <div className="demo-group-title"><p>REFERENCE</p><h2 id="style-guide-title">Six distinct directions</h2></div>
     <div className="demo-direction-grid" role="group" aria-label="Theme presets">{(Object.keys(directions) as Theme[]).map((name) => {

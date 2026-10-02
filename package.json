@@ -6,11 +6,11 @@
     "apps/*"
   ],
   "scripts": {
-    "build": "npm run build -w @cinder/web-ui && npm run build -w @cinder/demo",
-    "dev": "npm run build -w @cinder/web-ui && npm run dev -w @cinder/demo",
-    "dev:ui": "npm run dev -w @cinder/web-ui",
-    "typecheck": "npm run typecheck -w @cinder/web-ui && npm run typecheck -w @cinder/demo",
-    "pack:ui": "npm pack -w @cinder/web-ui"
+    "build": "npm run build -w @isaacrmoreno/cinder-ui && npm run build -w @cinder/demo",
+    "dev": "npm run build -w @isaacrmoreno/cinder-ui && npm run dev -w @cinder/demo",
+    "dev:ui": "npm run dev -w @isaacrmoreno/cinder-ui",
+    "typecheck": "npm run typecheck -w @isaacrmoreno/cinder-ui && npm run typecheck -w @cinder/demo",
+    "pack:ui": "npm pack -w @isaacrmoreno/cinder-ui"
   },
   "engines": {
     "node": ">=22"

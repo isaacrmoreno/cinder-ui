@@ -23,7 +23,7 @@ Open [localhost:3000](http://localhost:3000).
 After editing shared components or styles, rebuild them in another terminal and refresh:
 
 ```sh
-npm run build -w @cinder/web-ui
+npm run build -w @isaacrmoreno/cinder-ui
 ```
 
 ## Project structure

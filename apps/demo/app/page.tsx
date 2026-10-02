@@ -1,4 +1,4 @@
-import { About, FAQ, Footer, Gallery, Header, Hero, Projects, Services, Testimonials } from "@cinder/web-ui";
+import { About, FAQ, Footer, Gallery, Header, Hero, Projects, Services, Testimonials } from "@isaacrmoreno/cinder-ui";
 import type { ReactNode } from "react";
 import { StyleGuide } from "./style-guide";
 

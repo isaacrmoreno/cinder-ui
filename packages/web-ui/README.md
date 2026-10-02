@@ -1,4 +1,4 @@
-# @cinder/web-ui
+# @isaacrmoreno/cinder-ui
 
 Reusable React website sections for Cinder. Requires React 19.
 
@@ -21,8 +21,8 @@ Reusable React website sections for Cinder. Requires React 19.
 Import the stylesheet once in your app layout, then add a component:
 
 ```tsx
-import { Hero } from '@cinder/web-ui';
-import '@cinder/web-ui/styles.css';
+import { Hero } from '@isaacrmoreno/cinder-ui';
+import '@isaacrmoreno/cinder-ui/styles.css';
 
 <Hero
   variant="split"
