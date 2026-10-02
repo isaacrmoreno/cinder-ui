@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "demo": {
+      "root": "apps/demo",
+      "framework": "nextjs",
+      "installCommand": "cd ../.. && npm ci",
+      "buildCommand": "cd ../.. && npm run build"
+    }
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": { "service": "demo" } }
+  ]
+}
